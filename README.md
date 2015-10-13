@@ -27,6 +27,13 @@ public class Routes implements ApplicationRoutes {
 }
 ```
 
+## Usage
+
+This module is not yet released on Maven central.  You'll need to clone this 
+repo and try the demo app:
+
+    mvn -Pninja-run
+
 ## License
 
 Copyright (C) 2015 Fizzed, Inc.
