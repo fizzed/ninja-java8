@@ -20,6 +20,7 @@ import java.lang.invoke.SerializedLambda;
 import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
+import javax.inject.Inject;
 import ninja.Route;
 import ninja8.utils.Java8Helper;
 
@@ -31,6 +32,7 @@ public class RouterImpl implements Router {
     
     private final ninja.Router wrapped;
     
+    @Inject
     public RouterImpl(ninja.Router wrapped) {
         this.wrapped = wrapped;
     }

@@ -14,7 +14,7 @@ public class NinjaJava8Module extends AbstractModule {
 
     @Override
     protected void configure() {
-        // nothing to bind yet, maybe we'd eventually swap out Impl's for Java8 Impls
+        bind(ninja8.Router.class).to(ninja8.RouterImpl.class).asEagerSingleton();
     }
     
 }
