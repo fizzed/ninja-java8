@@ -4,7 +4,8 @@ import com.google.inject.AbstractModule;
 
 /**
  * 
- * Bindings for Rocker template engine
+ * Placeholder in case we want to override default bindings to actually
+ * implement Java8.
  * 
  * @author jjlauer
  *
@@ -13,7 +14,7 @@ public class NinjaJava8Module extends AbstractModule {
 
     @Override
     protected void configure() {
-        //bind(TemplateEngine.class).to(TemplateEngineRocker.class);
+        // nothing to bind yet, maybe we'd eventually swap out Impl's for Java8 Impls
     }
     
 }
