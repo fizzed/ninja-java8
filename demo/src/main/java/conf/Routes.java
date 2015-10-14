@@ -12,8 +12,8 @@ public class Routes implements ApplicationRoutes {
         router.GET().route("/").with(Application::index);
         router.GET().route("/reverse").with(Application::reverse);
         
-        router.GET().route("/assets/w/{fileName: .*}").with(AssetsController.class, "serveWebJars");
-        router.GET().route("/assets/{fileName: .*}").with(AssetsController.class, "serveStatic");
+        router.GET().route("/assets/j/{fileName: .*}").with(AssetsController::serveWebJars);
+        router.GET().route("/assets/s/{fileName: .*}").with(AssetsController::serveStatic);
     }
     
 }

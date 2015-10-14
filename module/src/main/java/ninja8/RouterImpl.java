@@ -16,13 +16,10 @@
 package ninja8;
 
 import com.google.common.base.Optional;
-import java.lang.invoke.SerializedLambda;
-import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 import javax.inject.Inject;
 import ninja.Route;
-import ninja8.utils.Java8Helper;
 
 /**
  *
