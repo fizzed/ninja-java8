@@ -73,6 +73,16 @@ public class RouterImpl implements Router {
     public Route getRouteFor(String httpMethod, String uri) {
         return wrapped.getRouteFor(httpMethod, uri);
     }
+    
+    @Override
+    public void compileRoutes() {
+        wrapped.compileRoutes();
+    }
+
+    @Override
+    public List<Route> getRoutes() {
+        return wrapped.getRoutes();
+    }
 
     @Override
     public String getReverseRoute(Class<?> clazz, String methodName) {
@@ -114,14 +124,6 @@ public class RouterImpl implements Router {
 
     
     
-    @Override
-    public void compileRoutes() {
-        wrapped.compileRoutes();
-    }
-
-    @Override
-    public List<Route> getRoutes() {
-        return wrapped.getRoutes();
-    }
+    
 
 }
